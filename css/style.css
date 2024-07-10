@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle input {
+    display: none;
+}
+
+.theme-toggle label {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#search, #sort {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search {
+    width: 70%;
+}
+
+#sort {
+    width: 25%;
+}
+
+.anime-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anime-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.anime-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.anime-item-content {
+    padding: 1.5rem;
+}
+
+.anime-item h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.anime-item p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.anime-themed {
+    font-family: 'Poppins', cursive;
+    color: #ff6b6b;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating-element {
+    animation: float 3s ease-in-out infinite;
+    display: inline-block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    #search, #sort {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+.theme-toggle label img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+}
+
+.theme-toggle .light-icon {
+    left: 8px;
+    opacity: 0;
+}
+
+.theme-toggle .dark-icon {
+    right: 8px;
+    opacity: 1;
+}
+
+.theme-toggle input:checked + label .light-icon {
+    opacity: 1;
+}
+
+.theme-toggle input:checked + label .dark-icon {
+    opacity: 0;
+}

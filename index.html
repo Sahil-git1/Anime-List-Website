@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Anime of All Time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css" id="theme-style" disabled>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Best Animes of All Time</a></li>
+                <li><a href="about.html">About Website</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch">
+            <label for="theme-switch">
+                <img src="svg/sun.svg" alt="Light mode" class="light-icon">
+                <img src="svg/moon.svg" alt="Dark mode" class="dark-icon">
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <h1>Best Animes of All Time</h1>
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search anime...">
+            <select id="sort">
+                <option value="rank">Sort by Rank</option>
+                <option value="title">Sort by Title</option>
+                <option value="year">Sort by Year</option>
+            </select>
+        </div>
+        <div id="anime-list"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Best Anime Website. All rights reserved.</p>
+    </footer>
+
+    <script src="js/anime-data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
