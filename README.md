@@ -1,6 +1,6 @@
 # 🌟 Anime List Website
 
-![Anime Banner](https://i.imgur.com/jFYoVvx.jpg)
+![Anime Banner](path_to_your_banner_image.jpg)
 
 Welcome to the Anime Web List repository! This project is a web application dedicated to anime enthusiasts, allowing users to explore and manage anime lists.
 
@@ -14,7 +14,7 @@ Check out the live version of the website [here](https://anime-weblist.web.app)!
 - 🖼️ **Visual Appeal**: Enjoy high-quality images and a sleek interface.
 - 📱 **Responsive Design**: Access the website on various devices.
 
-![Anime Collage](https://i.imgur.com/QMy86Qr.jpg)
+![Feature Image](path_to_your_feature_image.jpg)
 
 ## 🛠️ Technologies Used
 
@@ -25,9 +25,9 @@ Check out the live version of the website [here](https://anime-weblist.web.app)!
 
 ## 🚀 Setup
 
-To run this project locally:
+To run this project locallys:
 
-Clone the repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/Sahil-git1/Anime-List-Website.git
- 
+
