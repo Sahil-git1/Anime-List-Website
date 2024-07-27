@@ -1,6 +1,5 @@
 # 🌟 Anime List Website
 
-![Anime Banner](path_to_your_banner_image.jpg)
 
 Welcome to the Anime Web List repository! This project is a web application dedicated to anime enthusiasts, allowing users to explore and manage anime lists.
 
@@ -14,7 +13,7 @@ Check out the live version of the website [here](https://anime-weblist.web.app)!
 - 🖼️ **Visual Appeal**: Enjoy high-quality images and a sleek interface.
 - 📱 **Responsive Design**: Access the website on various devices.
 
-![Feature Image](path_to_your_feature_image.jpg)
+
 
 ## 🛠️ Technologies Used
 
